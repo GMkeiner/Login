@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 *{
     font-family: 'poppins' , sans-serif;
     margin: 0;
@@ -5,7 +7,7 @@
     box-sizing: border-box;
 }
 h2{
-    color: aliceblue;
+    color: #f1efef;
 }
 body{
     display: flex;
@@ -16,6 +18,7 @@ body{
     background-size: cover;
     background-position: center;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -24,7 +27,7 @@ header{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 99;
 }
 
@@ -36,6 +39,7 @@ header{
     font-weight: 500;
     margin-left: 40px;
 }
+
 .navegacion a{
     position: relative;
     font-size: 1.1rem;
@@ -44,6 +48,7 @@ header{
     font-weight: 500;
     margin-left: 40px;
 }
+
 .navegacion a::after{
     content: "";
     position: absolute;
@@ -52,14 +57,16 @@ header{
     left: 0;
     height: 2px;
     background: #fff;
-    transform: scaleY(0);
+    transform: scaleX(0);
     transform-origin: right;
-    transition: tranform .4s;
+    transition: tranSform .4s;
 }
+
 .navegacion a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
+
 .navegacion .btn{
     width: 140px;
     height: 50px;
@@ -72,6 +79,7 @@ header{
     font-weight: 600;
     margin-left: 40px;
 }
+
 .navegacion .btn:hover{
     background: #fff;
     color: #090f1d;
@@ -90,9 +98,10 @@ header{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: transform .5s ease heigth .2s ease;
+    transition: transform .5s ease height .2s;
     transform: scale(0);
 }
+
 .fondo.active-btn{
     transform: scale(1);
 }
@@ -104,21 +113,21 @@ header{
     padding: 40px;
 }
 .fondo.active .contenedor-form.login{
-    transition: transform .17s ease;
+    transition: .17s ease;
     transform: translateX(0);
 }
 .fondo.active .contenedor-form.login{
     transition: none;
     transform: translateX(-400px);
 }
-.fondo.active .contenedor-form.registrar{
-    transition: tranform .17s ease;
-    transform: translateX(0);
-}
-.fondo.active .contenedor-form.registrar{
+.fondo .contenedor-form.registrar{
     position: absolute;
     transition: none;
     transform: translateX(400px);
+}
+.fondo.active .contenedor-form.registrar{
+    transition: transform .17s ease;
+    transform: translateX(0);
 }
 .fondo .icono-cerrar{
     position: absolute;
@@ -136,6 +145,7 @@ header{
     font-size: 1.8em;
     color: #f1efef;
 } 
+
 .contenedor-form h2{
     font-size: 2em;
     color: #f1efef;
@@ -163,7 +173,6 @@ header{
 .contenedor-input input:valid~label{
     top: -5px;
 }
-
 .contenedor-input input{
     width: 100%;
     height: 100%;
@@ -185,7 +194,7 @@ header{
     font-size: .9em;
     margin: -15px 0 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: 600;
 }
 .recordar label input{
@@ -198,7 +207,7 @@ header{
 }
 .recordar a:hover{
     text-decoration: underline;
-}
+} 
 .btn{
     width: 100%;
     height: 45px;
@@ -207,18 +216,18 @@ header{
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    font-weight: bold;
     color: #f1efef;
+    font-weight: bold;
     background-color: #090f1d;
 }
 .registrar{
     font-size: .9em;
-    color: black;
+    color: #f1efef;
     text-align: center;
     margin: 25px 0 10px;
 }
-.registrar p a{
-    color: black;
+.registrar p a {
+    color: #f1efef;
     text-decoration: none;
 }
 .registrar p a:hover{
