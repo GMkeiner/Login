@@ -194,6 +194,7 @@ header{
     font-size: .9em;
     margin: -15px 0 15px;
     display: flex;
+    color: #f1efef;
     justify-content: space-between;
     font-weight: 600;
 }
