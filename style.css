@@ -14,9 +14,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://media.istockphoto.com/id/1398473177/es/foto/cuestionario-con-casillas-de-verificaci%C3%B3n-completar-el-formulario-de-la-encuesta-en-l%C3%ADnea.jpg?s=612x612&w=0&k=20&c=Gzzp1NaSZYTpAZ4-3_LddPCERSBj4yQij5WPzSTYv7Y=);
+    background: url(Encuesta.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-color: burlywood;
+    /* position: fixed; */
+    /* background-position: center; */
 }
 
 header{
@@ -34,7 +37,7 @@ header{
 .logo{
     position: relative;
     font-size: 2.3rem;
-    color: aliceblue;
+    
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
