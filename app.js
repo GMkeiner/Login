@@ -1,3 +1,5 @@
+ /*Codigo JS que contiene todo los relacionado con las funciones */
+
 const fondo = document.querySelector(".fondo");
 const loginlink = document.querySelector(".login-link");
 const registrarlink = document.querySelector(".registrar-link");
